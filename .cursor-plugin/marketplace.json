@@ -4,8 +4,11 @@
     "name": "Last9",
     "email": "cs@last9.io"
   },
-  "version": "1.2.0",
-  "pluginRoot": ".",
+  "metadata": {
+    "description": "Query production logs, metrics, traces, alerts, and change events from Last9 directly in Cursor.",
+    "version": "1.2.0",
+    "pluginRoot": "."
+  },
   "plugins": [
     {
       "name": "last9",
