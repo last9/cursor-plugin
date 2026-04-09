@@ -1,35 +1,22 @@
 # Last9 for Cursor
 
-Your AI assistant should know what's broken in production. This plugin makes that possible.
+Stop switching tabs to debug production. Ask Cursor instead.
 
-It connects Cursor to [Last9](https://last9.io) via MCP so you can ask questions like "what caused the spike in errors at 3pm?" and get real answers from your actual logs, metrics, and traces — without leaving your editor.
+This plugin connects Cursor to [Last9](https://last9.io) so your AI assistant has live access to your logs, metrics, traces, and alerts. Ask "what caused the spike in errors at 3pm?" and get a real answer — from your actual production data, right there in the editor.
 
-## What you get
+It works through MCP. Twenty-three tools covering logs, metrics, traces, APM, alerts, and change events. No copy-pasting. No context switching. The AI has the data.
 
-**23 live observability tools** wired directly into Cursor's AI:
+## Get started
 
-- Search and filter production logs
-- Run PromQL queries against your metrics
-- Inspect distributed traces for latency or errors
-- View service topology and dependency graphs
-- List active alerts and alert history
-- Correlate issues with deployments via change events
+Install from the Cursor Marketplace. Run `/last9-setup` in chat, enter your Last9 org slug (it's in your Last9 URL: `app.last9.io/<org_slug>/...`), then reload and connect. Any Last9 role works — you don't need admin access.
 
-No copy-pasting log lines into chat. No switching tabs. The AI has the data.
-
-## Setup
-
-Install from the Cursor Marketplace, then run `/last9-setup` in chat. You'll need your Last9 org slug — it's in your Last9 URL: `app.last9.io/<org_slug>/...`.
-
-The skill walks you through connecting the MCP server. Any Last9 role works; no admin access required.
+Once connected, just talk to Cursor. "Show me the slowest endpoints from the last hour." "Were there any deploys before this alert fired?" "What's throwing the most exceptions?"
 
 ## Skills
 
-| Skill | What it does |
-|---|---|
-| `/last9-setup` | Connect your Last9 account |
-| `/last9-debug` | Debug a production issue |
-| `/last9-investigate-alert` | Investigate a firing alert |
+`/last9-setup` — connects your Last9 account to Cursor.  
+`/last9-debug` — walks through debugging a production issue with your live data.  
+`/last9-investigate-alert` — investigates a firing alert end to end.
 
 ## Requirements
 
@@ -38,4 +25,4 @@ The skill walks you through connecting the MCP server. Any Last9 role works; no 
 
 ## Support
 
-[Discord](https://discord.com/invite/Q3p2EEucx9) · [cs@last9.io](mailto:cs@last9.io) · [MCP docs](https://last9.io/docs/integrations/mcp/)
+[Discord](https://discord.com/invite/Q3p2EEucx9) · [cs@last9.io](mailto:cs@last9.io) · [Docs](https://last9.io/docs/integrations/mcp/)
