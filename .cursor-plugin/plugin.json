@@ -19,6 +19,7 @@
     "alerts",
     "debugging"
   ],
+  "repository": "https://github.com/last9/cursor-plugin.git",
   "logo": "assets/logo.svg",
   "skills": ["skills/last9-setup", "skills/last9-debug", "skills/last9-investigate-alert"],
   "rules": ["rules/last9-context.mdc"],
