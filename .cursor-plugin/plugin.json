@@ -1,0 +1,26 @@
+{
+  "name": "last9",
+  "displayName": "Last9",
+  "version": "1.2.0",
+  "description": "Query production logs, metrics, traces, alerts, and change events from Last9 directly in Cursor.",
+  "author": {
+    "name": "Last9",
+    "email": "cs@last9.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "observability",
+    "monitoring",
+    "logs",
+    "metrics",
+    "traces",
+    "opentelemetry",
+    "apm",
+    "alerts",
+    "debugging"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": ["skills/last9-setup", "skills/last9-debug", "skills/last9-investigate-alert"],
+  "rules": ["rules/last9-context.mdc"],
+  "mcpServers": ["mcp.json"]
+}

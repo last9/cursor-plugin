@@ -1,0 +1,31 @@
+---
+description: Context and best practices for using Last9 observability tools
+alwaysApply: true
+---
+
+# Last9 Observability Context
+
+When the user asks about production issues, errors, performance, or monitoring, use the Last9 MCP tools to answer with real data instead of guessing.
+
+## Available Tools
+
+- `get_service_summary` — overview of all services with throughput, error rate, p95
+- `get_service_performance_details` — deep metrics for a specific service
+- `get_service_dependency_graph` — service topology with edge metrics
+- `get_exceptions` — aggregated exceptions by type and service
+- `get_service_traces` — individual traces by trace ID or service name
+- `get_traces` — advanced trace queries with JSON pipeline
+- `get_logs` / `get_service_logs` — log queries with filtering
+- `get_databases` — database throughput, latency, error rates
+- `prometheus_range_query` / `prometheus_instant_query` — PromQL metrics queries
+- `get_change_events` — deployments, config changes, rollbacks
+- `get_alerts` / `get_alert_config` — active alerts and rule configurations
+- `did_you_mean` — entity name autocomplete for services, environments, hosts, databases
+
+## Best Practices
+
+- Use `did_you_mean` when a service or entity name lookup fails before asking the user
+- Always check `get_change_events` when investigating performance regressions — most issues correlate with deploys
+- For exceptions, follow up `get_exceptions` with `get_service_traces` to get full stack traces
+- Use `prometheus_range_query` for custom metric analysis — it supports full PromQL syntax
+- Time ranges default to the last 60 minutes if not specified by the user

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "last9": {
+      "type": "http",
+      "url": "https://app.last9.io/api/v4/organizations/${LAST9_ORG_SLUG:-not-setup}/mcp"
+    }
+  }
+}
